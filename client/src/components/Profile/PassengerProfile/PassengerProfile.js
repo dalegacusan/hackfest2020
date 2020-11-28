@@ -37,7 +37,7 @@ export default function PassengerProfile(props) {
                 <div class="col-lg-8 mx-auto">
                   <div class="control-group">
                     <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                      <h5>Name:</h5> <span>Celeste Salt</span>
+                      <h5>Name:</h5> <span>Felipe Santos</span>
                     </div>
                   </div>
                   <div class="control-group">

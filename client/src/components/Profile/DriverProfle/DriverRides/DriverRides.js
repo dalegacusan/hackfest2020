@@ -41,7 +41,7 @@ export default function DriverRides(props) {
       </div>
 
       <div style={{ marginBottom: "70px" }}>
-        <RideContainer />;
+        <RideContainer />
       </div>
 
       {
