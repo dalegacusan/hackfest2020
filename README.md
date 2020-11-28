@@ -4,6 +4,8 @@ Application name is an
 
 **Please do note** that the application is `meant to be used for mobile phones`, so it's best if you view it with your mobile phones instead because the application was optimized for that user experience.
 
+This project was submitted in fulfillment of [DSC Loyola's HackFest 2020: Online](https://hackfest.dscadmu.org/)
+
 ## Built with 
 
 * React
