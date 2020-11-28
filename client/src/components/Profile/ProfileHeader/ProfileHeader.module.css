@@ -1,0 +1,31 @@
+.profileHeader_container p{
+  margin-bottom: 0;
+  text-align: center;
+
+}
+
+.profileHeader_logo, .profileHeader_title{
+  padding: 20px 0px;
+}
+
+
+.profileHeader_logo{
+  background-color: #7A7A7A;
+}
+
+
+.profileHeader_title{
+  background-color: #C4C4C4;
+}
+
+.close {
+  cursor: pointer;
+  position: absolute;
+  font-size: 18px;
+  top: 50%;
+  right: 4%;
+  padding: 0px 22px;
+  transform: translate(0%, -50%);
+}
+
+.close:hover {color: #000;}

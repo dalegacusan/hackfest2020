@@ -1,0 +1,39 @@
+.driverRides_buttons button{
+  padding: 10px!important;
+  margin-right: 4px;
+}
+
+.btn_view {
+  background: #2d71a1;
+  background: linear-gradient(-45deg, #1391a5, #274685);
+  color: #fff;
+  min-width: 100px;
+}
+
+.btn_edit {
+  background: hsl(39, 100%, 54%);
+  background: linear-gradient(-45deg, #f7d514, #da8d00);
+  color: #fff!important;
+  min-width: 100px;
+}
+
+.btn_cancel {
+  background: #d32020;
+  background: linear-gradient(-45deg, #FF4500, 	#800000);
+  color: #fff;
+  width: 100px;
+}
+
+.addTrip_container{
+  margin: 8px 0;
+}
+
+.addTrip_container button{
+  background-color: orange;
+  padding: 10px 20px!important;
+}
+
+.driverRides_button{
+  margin-right: 14px;
+  font-size: 14px;
+}

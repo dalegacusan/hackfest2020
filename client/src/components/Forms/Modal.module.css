@@ -1,0 +1,16 @@
+.landingModal_header{
+  background-color: #DBDBDB!important;
+}
+
+.landingModal_footer{
+  justify-content: center;
+  background-color: #DBDBDB!important;
+}
+
+.landingModal_footer p {
+  margin-bottom: 0;
+}
+
+.formCTAButton{
+  margin-top: 30px;
+}

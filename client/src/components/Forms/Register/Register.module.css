@@ -1,0 +1,14 @@
+.registerModal_userDescription{
+  font-weight: lighter;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 18px;
+}
+
+.registerModal_userTitle{
+  color: rgb(0, 0, 0);
+}
+
+.createAccountButton{
+  margin-top: 35px;
+}
