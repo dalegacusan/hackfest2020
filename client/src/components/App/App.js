@@ -38,7 +38,6 @@ function App() {
             <Route exact path="/passengerrides" render={() => <PassengerRides currentUser={currentUser} />} />
             <Route exact path="/passengerhome1" render={() => <PassengerHome1 currentUser={currentUser} />} />
             
-
             <Route exact path="/driverprofile" render={() => <DriverProfile currentUser={currentUser} />} />
             <Route exact path="/driverhome" render={() => <DriverHome currentUser={currentUser} handleCurrentUser={handleCurrentUser} />} />
             <Route exact path="/drivercreateride" render={() => <DriverCreateRide currentUser={currentUser} />} />

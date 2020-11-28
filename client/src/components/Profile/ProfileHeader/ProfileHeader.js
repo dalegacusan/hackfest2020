@@ -18,7 +18,7 @@ export default function ProfileHeader(props) {
   } else if (currentpage === "driverhome") {
     renderedHeader = (
       <>
-        <p style={{ textAlign: "center" }}>Driver Home</p>
+        <p style={{ textAlign: "center" }}>Driver Dashboard</p>
       </>
     );
   } else if (currentpage === "drivercreateride") {
@@ -30,7 +30,7 @@ export default function ProfileHeader(props) {
   } else if (currentpage === "driverrides") {
     renderedHeader = (
       <>
-        <p style={{ textAlign: "center" }}>Passenger Ride History</p>
+        <p style={{ textAlign: "center" }}>Driver Trip History</p>
       </>
     );
   } else if (currentpage === "drivermainprofile") {
@@ -48,13 +48,19 @@ export default function ProfileHeader(props) {
   } else if (currentpage === "passengerhome") {
     renderedHeader = (
       <>
-        <p style={{ textAlign: "center" }}>HOME</p>
+        <p style={{ textAlign: "center" }}>Passenger Dashboard</p>
       </>
     );
   } else if (currentpage === "passengerbookride") {
     renderedHeader = (
       <>
         <p style={{ textAlign: "center" }}>Book a Ride</p>
+      </>
+    );
+  } else if (currentpage === "passengerhome1"){
+    renderedHeader = (
+      <>
+        <p style={{ textAlign: "center" }}>Passenger Dashboard</p>
       </>
     );
   }
