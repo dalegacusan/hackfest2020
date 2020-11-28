@@ -29,6 +29,12 @@ export default function Footer(props) {
           <p>Rides</p>
         </div>
       </Link>
+      <Link to={`/`} class="navbar-brand">
+        <div>
+          <i class="fas fa-sign-out-alt"></i>
+          <p>Logout</p>
+        </div>
+      </Link>
     </nav>
   );
 }

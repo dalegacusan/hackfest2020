@@ -8,7 +8,7 @@ import {
 
 export default function SignIn(props) {
 
-  const { modalIsOpen, closeModal } = props;
+  const { currentUser, modalIsOpen, closeModal } = props;
 
   return (
     <>
@@ -27,7 +27,17 @@ export default function SignIn(props) {
               <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
             </div>
             <div className="form-group">
-              <button type="button" className={`btn btn-block btn-primary ${styles.formCTAButton}`}>Sign In</button>
+              {
+                currentUser === "passenger"
+                  ?
+                  <Link to="/passengerhome">
+                    <button type="button" className={`btn btn-block btn-primary ${styles.formCTAButton}`}>Sign In</button>
+                  </Link>
+                  :
+                  <Link to="/driverhome">
+                    <button type="button" className={`btn btn-block btn-primary ${styles.formCTAButton}`}>Sign In</button>
+                  </Link>
+              }
             </div>
           </div>
         </Modal.Body>
