@@ -27,7 +27,7 @@ export default function DriverHome(props) {
           <Footer home="driverhome" profile="drivermainprofile" rides="driverrides" />
           :
           // Put PASSENGER ROUTES HERE
-          null
+          <Footer home="passengerhome" profile="passengerprofile" rides="passengerrides" />
       }
     </div >
   );
