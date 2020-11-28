@@ -48,7 +48,7 @@ export default function ProfileHeader(props) {
   } else if (currentpage === "passengerhome") {
     renderedHeader = (
       <>
-        <p style={{ textAlign: "center" }}>Passenger Home</p>
+        <p style={{ textAlign: "center" }}>HOME</p>
       </>
     );
   } else if (currentpage === "passengerbookride") {

@@ -1,10 +1,10 @@
 .landingModal_header{
-  background-color: #274685!important;
+  background: linear-gradient(-45deg, #0077b6, #457b9d);
 }
 
 .landingModal_footer{
   justify-content: center;
-  background-color: #274685!important;
+  background: linear-gradient(-45deg, #0077b6 , #457b9d);
 }
 
 .landingModal_footer p {

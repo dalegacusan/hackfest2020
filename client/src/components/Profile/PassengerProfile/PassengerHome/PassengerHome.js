@@ -62,7 +62,7 @@ export default function DriverHome(props) {
               </a>
             </div>
             <div class="col-7">
-              <h5>SM Molino -> Park Square, Makati</h5>
+              <h5>SM Molino to Park Square, Makati</h5>
               <p> ( 9:00 AM - 10:00 AM )</p>
             </div>
             <div class="col-md-3">

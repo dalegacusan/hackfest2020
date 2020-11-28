@@ -14,12 +14,10 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-<<<<<<< HEAD
   color: #000;
-=======
-  color: #9fa1a4;
->>>>>>> 51f86e2813cbd968b8a166540cd778fede2193f7
   line-height: 1.5;
+  background: #fff;
+  
 }
 
 a {
@@ -74,7 +72,7 @@ section {
 .section-heading {
   font-size: 3rem;
   font-weight: 700;
-  background: linear-gradient(-45deg, #3db3c5, #274685);
+  background: linear-gradient(-45deg, #3db3c5, #3db3c5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -130,8 +128,8 @@ section {
 
 .btn.btn-primary {
   background: #2d71a1;
-  background: linear-gradient(-45deg, #ffb703cc, #ffd166cc);
-  color: #000;
+  background: linear-gradient(-45deg, #274685, #457b9d);
+  color: #fff;
   box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.15);
 }
 
@@ -319,7 +317,7 @@ section {
 # Hero Section
 --------------------------------------------------------------*/
 .hero-section {
-  background: linear-gradient(to right, #ffd166cc 0%, #ffb703cc 100%), url(../img/abs5.jpg);
+  background: linear-gradient(to right, #274685 0%, #457b9d 100%), url(./assets/img/abs5.jpg);
   position: relative;
 }
 
@@ -890,7 +888,6 @@ section {
 .social a:hover {
   color: #fff;
   background: #2d71a1;
-<<<<<<< HEAD
 }
 .center {
   display: block;
@@ -898,7 +895,44 @@ section {
   margin-right: auto;
   width: 50%;
 }
+/*--------------------------------------------------------------
+# Passengert Search section
+--------------------------------------------------------------*/
 
-=======
+.passenger-search {
+  /* The image used */
+  background-image:  url(../img/abs5.jpg);
+
+  /* Full height */
+  height: 900px;
+  width: 539px;
+
+  /* Center and scale the image nicely */
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
 }
->>>>>>> 51f86e2813cbd968b8a166540cd778fede2193f7
+
+.ml-101{
+    margin: -0.90rem !important;
+}
+
+.mt-3,
+.my-3 {
+  margin-top: 1rem !important;
+}
+
+.card-body {
+  background: 100%;
+  position: relative;
+}
+
+.btn.btn-search {
+  background: hsl(44, 98%, 48%);
+  color: hsl(44, 98%, 48%);
+}
+
+.btn.btn-reserve {
+  background: hsl(209, 75%, 46%);
+  width: 125px;
+}

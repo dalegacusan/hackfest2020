@@ -10,13 +10,10 @@
 
 
 .profileHeader_logo{
-  
-  background: linear-gradient(to left, #ffb703cc, #ffd166cc);
+  background: linear-gradient(to right, #457b9d 20%, #274685 80%);
 }
-
-
 .profileHeader_title{
-  background-color: #ffb703cc;
+  background: linear-gradient(to left, #457b9d 0%, #274685 20%);
 }
 
 .close {

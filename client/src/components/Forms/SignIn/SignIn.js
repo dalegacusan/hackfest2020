@@ -30,7 +30,7 @@ export default function SignIn(props) {
               {
                 currentUser === "passenger"
                   ?
-                  <Link to="/passengerhome">
+                  <Link to="/passengerhome1">
                     <button type="button" className={`btn btn-block btn-primary ${styles.formCTAButton}`}>Sign In</button>
                   </Link>
                   :
