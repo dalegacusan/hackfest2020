@@ -16,20 +16,22 @@ export default function DriverHome(props) {
         </div>
       </div>
 
-      <div class="row ml-1" style={{ marginTop: "25px", marginBottom: "25px" }}>
-        <img src="assets/img/DASH.png" width="50" class="front-1" data-aos="fade-right" alt="history_img" style={{ width: "50px", marginTop: "-10px", transform: "scaleX(-1)" }} />
-        <p style={{ fontSize: "24px", marginBottom: "0", marginLeft: "9px", textAlign: "center" }}>Dashboard</p>
+      {/* <img src="assets/img/DASH.png" width="50" class="front-1" data-aos="fade-right" alt="history_img" style={{ width: "50px", marginTop: "-10px", transform: "scaleX(-1)" }} /> */}
+      <div className={`d-flex justify-content-center`}>
+        <div class="row " style={{ marginTop: "30px", marginBottom: "20px" }}>
+          <p style={{ fontSize: "18px", marginBottom: "0", marginLeft: "9px", textAlign: "center" }}>Welcome to your Dashboard!</p>
+        </div>
       </div>
 
-      <div class="row" style={{ marginTop: "25px", marginBottom: "25px" }}>
-        <div class="col">
+      <div class="row " style={{ marginTop: "10px", marginBottom: "25px" }}>
+        <div class="col d-flex justify-content-center">
           <Link to="/drivercreateride">
             <button type="button" class="btn btn-primary">Create a Ride</button>
           </Link>
         </div>
       </div>
 
-      <div>
+      <div style={{marginBottom: "60px"}}>
         <div class="row mt-5 py-3 px-lg-3 border bg-light">
           <div class="col-3 ml-1"><h5>Date</h5></div>
           <div class="col-4"><h5>Time</h5></div>
