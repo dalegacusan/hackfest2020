@@ -7,7 +7,6 @@ import Footer from '../../../Footer/Footer';
 export default function PassengerBookRide(props) {
   const { currentUser } = props;
 
-export default function PassengerBookRide() {
   return (
 
     <div className="container">
