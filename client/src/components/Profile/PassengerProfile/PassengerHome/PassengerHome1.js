@@ -1,5 +1,6 @@
 import React from 'react';
 import ProfileHeader from '../../ProfileHeader/ProfileHeader';
+import PassengerHome from '../PassengerHome/PassengerHome';
 import Footer from '../../../Footer/Footer';
 import styles from './PassengerHome.module.css';
 import {
@@ -32,7 +33,9 @@ export default function DriverHome(props) {
                             <input class="form-control form-control-lg form-control-borderless " type="search" placeholder="Search topics or keywords"/>
                         </div>              
                         <div class="col-1 ml-2">
+                            <Link to="/passengerhome">
                             <button class="btn btn-lg btn-search text-dark" type="submit">Search</button>
+                            </Link>
                         </div>                    
                       </div>
                   </form>
