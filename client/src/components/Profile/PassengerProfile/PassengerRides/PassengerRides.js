@@ -20,13 +20,13 @@ export default function PassengerRides(props) {
       </div>
 
       <div class="row ml-1" style={{ marginTop: "25px", marginBottom: "25px" }}>
-        <img src="assets/img/history.png" width="150" class="front-1" data-aos="fade-right" alt="history_img" style={{ width: "50px", marginTop: "-10px", transform: "scaleX(-1)" }} />
-        <p style={{ fontSize: "24px", marginBottom: "0", marginLeft: "9px", textAlign: "center"}}>My Ride History</p>
+        <img src="assets/img/ICON.jpg" width="150" class="front-1" data-aos="fade-right" alt="history_img" style={{ width: "50px", marginTop: "-10px", transform: "scaleX(-1)" }} />
+        <p style={{ fontSize: "24px", marginBottom: "0", marginLeft: "9px", textAlign: "center" }}>My Ride History</p>
       </div>
 
       <div style={{ marginBottom: "65px" }}>
         <RideContainer />
-    </div>
+      </div>
 
       {
         currentUser === "driver" ?
