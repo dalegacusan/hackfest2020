@@ -5,8 +5,7 @@ import DriverPhoto from '../../UserPhoto/UserPhoto';
 
 export default function DriverMainProfile(props) {
 
-  const { currentUser, driverInformation } = props;
-  const { fullName, emailAddress, contactNumber, age, plateNumber, route } = driverInformation
+  const { currentUser } = props;
 
   return (
     <div class="container">
@@ -38,37 +37,37 @@ export default function DriverMainProfile(props) {
                 <div class="col-lg-8 mx-auto">
                   <div class="control-group">
                     <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                      <h5>Name:</h5> <span>{fullName}</span>
+                      <h5>Name:</h5> <span>John Doe</span>
                     </div>
                   </div>
                   <div class="control-group">
                     <div class="form-group floating-label-form-group controls mb-0 pb-2">
                       <h5>Email Address:</h5>
-                      <span>{emailAddress}</span>
+                      <span>johndoe@gmail.com</span>
                     </div>
                   </div>
                   <div class="control-group">
                     <div class="form-group floating-label-form-group controls mb-0 pb-2">
                       <h5>Contact Number:</h5>
-                      <span>{contactNumber}</span>
+                      <span>0953882934</span>
                     </div>
                   </div>
                   <div class="control-group">
                     <div class="form-group floating-label-form-group controls mb-0 pb-2">
                       <h5>Age:</h5>
-                      <span>{age}</span>
+                      <span>28</span>
                     </div>
                   </div>
                   <div class="control-group">
                     <div class="form-group floating-label-form-group controls mb-0 pb-2">
                       <h5>Plate No:</h5>
-                      <span>{plateNumber}</span>
+                      <span>UJRF 413</span>
                     </div>
                   </div>
                   <div class="control-group">
                     <div class="form-group floating-label-form-group controls mb-0 pb-2">
                       <h5>Route:</h5>
-                      <span>{route}</span>
+                      <span>Bacoor to MOA</span>
                     </div>
                   </div>
                 </div>
