@@ -39,7 +39,21 @@ export default function ProfileHeader(props) {
         <p style={{ textAlign: "center" }}>Driver Profile</p>
       </>
     );
+  } else if (currentpage === "passengerprofile") {
+    renderedHeader = (
+      <>
+        <p style={{ textAlign: "center" }}>Passenger Profile</p>
+      </>
+    );
+  } else if (currentpage === "passengerhome") {
+    renderedHeader = (
+      <>
+        <p style={{ textAlign: "center" }}>Passenger Home</p>
+      </>
+    );
   }
+
+
 
   return (
     <div className={`${styles.profileHeader_container}`}>

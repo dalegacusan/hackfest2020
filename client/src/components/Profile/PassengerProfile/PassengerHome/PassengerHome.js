@@ -12,13 +12,13 @@ export default function DriverHome(props) {
     <div className="container">
       <div class="row">
         <div class="col">
-          <ProfileHeader currentpage="driverhome" />
+          <ProfileHeader currentpage="passengerhome" />
         </div>
       </div>
       <div class="row">
         <div class="col">
-          <Link to="/drivercreateride">
-            <button type="button" class="btn btn-primary">Create a Ride</button>
+          <Link to="/passengerbookride">
+            <button type="button" class="btn btn-primary">Book a Ride</button>
           </Link>
         </div>
       </div>
@@ -27,7 +27,7 @@ export default function DriverHome(props) {
           <Footer home="driverhome" profile="drivermainprofile" rides="driverrides" />
           :
           // Put PASSENGER ROUTES HERE
-          null
+          <Footer home="passengerhome" profile="passengerprofile" rides="passengerrides" />
       }
     </div >
   );

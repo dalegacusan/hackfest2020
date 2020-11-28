@@ -1,10 +1,11 @@
 import React from 'react';
 import styles from './DriverName.module.css';
 
-export default function DriverName(){
+export default function DriverName(props) {
+  const { fullName } = props;
   return (
     <div className={styles.driverName_container}>
-      <p>Donald Lewis</p>
+      <p>{fullName}</p>
     </div>
   );
 }

@@ -7,7 +7,11 @@ import {
   Link
 } from "react-router-dom";
 
-export default function DriverRides() {
+export default function DriverRides(props) {
+
+  const { currentUser, driverInformation } = props;
+  const { rides } = driverInformation;
+
   return (
     <div class="container">
 
@@ -26,7 +30,7 @@ export default function DriverRides() {
       </div>
 
       <div class="row ml-1" style={{ marginTop: "25px", marginBottom: "30px" }}>
-        <img src="assets/img/history.png" width="150" class="front-1" data-aos="fade-right" style={{ width: "50px", marginTop: "-10px", transform: "scaleX(-1)" }} />
+        <img src="assets/img/history.png" width="150" class="front-1" data-aos="fade-right" alt="history_img" style={{ width: "50px", marginTop: "-10px", transform: "scaleX(-1)" }} />
         <p style={{ fontSize: "24px", marginBottom: "0", marginLeft: "9px" }}>Ride History</p>
       </div>
 
@@ -37,12 +41,24 @@ export default function DriverRides() {
         <div class="col-4"><h5>Route</h5></div>
       </div>
 
-      <RideContainer />
-      <RideContainer />
-      <RideContainer />
-      <RideContainer />
+      <div style={{ marginBottom: "70px" }}>
 
-      <Footer />
+        {
+          rides ?
+            rides.map(ride => {
+              return <RideContainer ride={ride} />;
+            }) : null
+        }
+
+      </div>
+
+      {
+        currentUser === "driver" ?
+          <Footer home="driverhome" profile="drivermainprofile" rides="driverrides" />
+          :
+          // Put PASSENGER ROUTES HERE
+          null
+      }
 
     </div>
   );
