@@ -10,20 +10,9 @@ export default function RideDetails(props) {
   const { currentUser } = props;
 
   return (
-<<<<<<< HEAD
     <div className={`${styles.rideDetails_container}`}>
       <img src="assets/img/bus.png" alt="Image" class="center"></img>
       <div class="row" style={{ margin: "40px 0" }}>
-=======
-    <div style={{ margin: "30px 0" }} className={`${styles.rideDetails_container}`}>
-      <div class="row" >
-        <div class="col">
-          <p style={{ fontSize: "20px", fontWeight: "500" }}>Create a Ride</p>
-        </div>
-      </div>
-
-      <div class="row">
->>>>>>> 51f86e2813cbd968b8a166540cd778fede2193f7
         <div class="col">
           <small>Please do note that once there are reservations already to your ride, you may not cancel or edit the ride information anymore</small>
         </div>
