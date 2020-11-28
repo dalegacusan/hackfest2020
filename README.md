@@ -20,6 +20,24 @@ The application is deployed on **Netlify**
 
 [Click me for a live demo]().
 
+## Installation
+
+1. Enter the following in your terminal
+
+   `git clone https://github.com/dalegacusan/hackfest2020.git`
+
+2. cd over to **client** folder
+
+   `cd /client`
+   
+3. Install the dependencies by typing 
+
+   `npm i`
+   
+4. After the installation, you can now run the React app using
+
+   `npm start`
+
 ## Screenshots
 
 
