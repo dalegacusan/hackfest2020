@@ -22,3 +22,13 @@
   min-width: 120px;
   padding: 8px 0px!important;
 }
+
+.searchbutton{
+  padding: 7.5px 30px!important; 
+  background-color: #ffc107;
+  color: #000;
+}
+
+.searchbutton:hover{
+  background-color: #ffbf00;
+}
