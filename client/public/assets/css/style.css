@@ -14,12 +14,12 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #9fa1a4;
+  color: #fff;
   line-height: 1.5;
 }
 
 a {
-  color: #777;
+  color: #000;
   transition: .3s all ease;
 }
 
@@ -315,7 +315,7 @@ section {
 # Hero Section
 --------------------------------------------------------------*/
 .hero-section {
-  background: linear-gradient(to right, rgba(39, 70, 133, 0.8) 0%, rgba(61, 179, 197, 0.8) 100%), url(../img/hero-bg.jpg);
+  background: linear-gradient(to right, #ffd166cc 0%, #ffb703cc 100%), url(../img/abs5.jpg);
   position: relative;
 }
 
