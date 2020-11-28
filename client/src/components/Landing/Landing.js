@@ -7,7 +7,7 @@ import LandingFooter from './LandingFooter/LandingFooter';
 import styles from './Landing.module.css';
 
 export default function Landing(props) {
-  const { handleCurrentUser, handleInputChange } = props;
+  const { currentUser, handleCurrentUser, handleInputChange } = props;
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const openModal = () => setModalIsOpen(true);
@@ -18,7 +18,7 @@ export default function Landing(props) {
       {
         modalIsOpen
           ?
-          <SignIn modalIsOpen={modalIsOpen} closeModal={closeModal}/>
+          <SignIn currentUser={currentUser} modalIsOpen={modalIsOpen} closeModal={closeModal}/>
           : null
       }
 

@@ -28,7 +28,7 @@ function App() {
       <Router>
         <div>
           <Switch>
-            <Route exact path="/" render={() => <Landing handleCurrentUser={handleCurrentUser} />} />
+            <Route exact path="/" render={() => <Landing currentUser={currentUser} handleCurrentUser={handleCurrentUser} />} />
             <Route exact path="/register" render={() => <Register currentUser={currentUser} />} />
 
             <Route exact path="/passengerprofile" render={() => <PassengerProfile currentUser={currentUser} />} />
