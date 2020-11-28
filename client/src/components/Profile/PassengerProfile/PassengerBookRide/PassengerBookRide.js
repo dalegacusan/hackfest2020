@@ -8,7 +8,6 @@ export default function PassengerBookRide(props) {
   const { currentUser } = props;
 
   return (
-
     <div className="container">
       <div class="row">
         <div class="col">
