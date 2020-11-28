@@ -1,23 +1,25 @@
 import React, { useState } from 'react';
+import BookRideDetails from './BookRideDetails/BookRideDetails'
+import './PassengerBookRide.css';
 import ProfileHeader from '../../ProfileHeader/ProfileHeader';
-import RideDetails from './RideDetails/RideDetails';
 import Footer from '../../../Footer/Footer';
 
-export default function DriverCreateRide(props) {
-
-  const { currentUser} = props;
+export default function PassengerBookRide(props) {
+  const { currentUser } = props;
 
   return (
     <div className="container">
       <div class="row">
         <div class="col">
-          <ProfileHeader currentpage="drivercreateride" />
+          <ProfileHeader currentpage="passengerbookride" />
         </div>
       </div>
 
       <div class="row">
         <div class="col">
-          <RideDetails currentUser={currentUser} />
+
+          <BookRideDetails currentUser={currentUser} />
+
         </div>
       </div>
 
@@ -29,5 +31,7 @@ export default function DriverCreateRide(props) {
           <Footer home="passengerhome" profile="passengerprofile" rides="passengerrides" />
       }
     </div >
+
+
   );
 }

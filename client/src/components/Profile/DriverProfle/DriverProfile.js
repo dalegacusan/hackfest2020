@@ -1,6 +1,6 @@
 import React from 'react';
 import ProfileHeader from '../ProfileHeader/ProfileHeader';
-import DriverPhoto from './DriverPhoto/DriverPhoto';
+import DriverPhoto from '../UserPhoto/UserPhoto';
 import DriverName from './DriverName/DriverName';
 import DriverBasicInformation from './DriverBasicInformation/DriverBasicInformation';
 import Footer from '../../Footer/Footer';
@@ -9,14 +9,18 @@ import {
   Link
 } from "react-router-dom";
 
-export default function DriverProfile() {
+export default function DriverProfile(props) {
+
   return (
-
-
     <div className="container">
       <div class="row">
         <div class="col">
           <ProfileHeader currentpage="driverprofile" />
+        </div>
+      </div>
+      <div class="row" style={{ marginTop: "26px" }}>
+        <div class="col">
+          <p style={{ fontSize: "18px", fontWeight: "500", textAlign: "center" }}>Please complete your information.</p>
         </div>
       </div>
       <div class="row">
@@ -46,7 +50,9 @@ export default function DriverProfile() {
       </div>
 
       {/* Render if has BASIC INFORMATION already */}
-      {/* <Footer /> */}
+      {/* {
+        <Footer />
+      } */}
 
     </div>
 

@@ -1,10 +1,13 @@
 import React from 'react';
 import ProfileHeader from '../../ProfileHeader/ProfileHeader';
+import Footer from '../../../Footer/Footer';
 import {
   Link
 } from "react-router-dom";
 
-export default function DriverHome() {
+export default function DriverHome(props) {
+  const { currentUser } = props;
+
   return (
     <div className="container">
       <div class="row">
@@ -19,6 +22,13 @@ export default function DriverHome() {
           </Link>
         </div>
       </div>
+      {
+        currentUser === "driver" ?
+          <Footer home="driverhome" profile="drivermainprofile" rides="driverrides" />
+          :
+          // Put PASSENGER ROUTES HERE
+          null
+      }
     </div >
   );
 }
