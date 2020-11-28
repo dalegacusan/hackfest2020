@@ -11,9 +11,6 @@ import {
 
 export default function DriverProfile(props) {
 
-  const { currentUser, driverInformation, setDriverInformation } = props;
-  const { fullName } = driverInformation;
-
   return (
     <div className="container">
       <div class="row">
@@ -21,7 +18,7 @@ export default function DriverProfile(props) {
           <ProfileHeader currentpage="driverprofile" />
         </div>
       </div>
-      <div class="row" style={{ marginTop: "20px" }}>
+      <div class="row" style={{ marginTop: "26px" }}>
         <div class="col">
           <p style={{ fontSize: "18px", fontWeight: "500", textAlign: "center" }}>Please complete your information.</p>
         </div>
@@ -33,12 +30,12 @@ export default function DriverProfile(props) {
       </div>
       <div class="row">
         <div class="col">
-          <DriverName fullName={fullName} />
+          <DriverName />
         </div>
       </div>
       <div class="row">
         <div class="col">
-          <DriverBasicInformation setDriverInformation={setDriverInformation} />
+          <DriverBasicInformation />
         </div>
       </div>
 
