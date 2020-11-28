@@ -7,7 +7,7 @@ export default function LandingFooter() {
 
         <div class="row justify-content-center text-center">
           <div class="col-md-7">
-            <p class="copyright">&copy; Copyright SoftLand. All Rights Reserved</p>
+            <p class="copyright">Developed by Team ProGs for HackFest 2020</p>
             <div class="credits">
               Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
             </div>

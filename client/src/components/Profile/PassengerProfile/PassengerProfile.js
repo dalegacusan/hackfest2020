@@ -5,15 +5,14 @@ import PassengerPhoto from '../UserPhoto/UserPhoto';
 
 export default function PassengerProfile(props) {
 
-  const { currentUser, passengerInformation } = props;
-  const { fullName, emailAddress, contactNumber, age, rides } = passengerInformation
+  const { currentUser } = props;
 
   return (
     <div class="container">
 
       <div class="row">
         <div class="col">
-          <ProfileHeader currentpage="passengerProfile" />
+          <ProfileHeader currentpage="passengerprofile" />
         </div>
       </div>
 
@@ -38,25 +37,25 @@ export default function PassengerProfile(props) {
                 <div class="col-lg-8 mx-auto">
                   <div class="control-group">
                     <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                      <h5>Name:</h5> <span>{fullName}</span>
+                      <h5>Name:</h5> <span>Felipe Santos</span>
                     </div>
                   </div>
                   <div class="control-group">
                     <div class="form-group floating-label-form-group controls mb-0 pb-2">
                       <h5>Email Address:</h5>
-                      <span>{emailAddress}</span>
+                      <span>celestesalt@gmail.com</span>
                     </div>
                   </div>
                   <div class="control-group">
                     <div class="form-group floating-label-form-group controls mb-0 pb-2">
                       <h5>Contact Number:</h5>
-                      <span>{contactNumber}</span>
+                      <span>095682134</span>
                     </div>
                   </div>
                   <div class="control-group">
                     <div class="form-group floating-label-form-group controls mb-0 pb-2">
                       <h5>Age:</h5>
-                      <span>{age}</span>
+                      <span>34</span>
                     </div>
                   </div>
                 </div>

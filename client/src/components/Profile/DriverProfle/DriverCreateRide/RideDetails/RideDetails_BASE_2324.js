@@ -7,23 +7,11 @@ import {
 
 export default function RideDetails(props) {
 
-  const { currentUser } = props;
+  const { currentUser, handleInputChange, handleSubmit } = props;
 
   return (
-<<<<<<< HEAD
     <div className={`${styles.rideDetails_container}`}>
-      <img src="assets/img/bus.png" alt="Image" class="center"></img>
       <div class="row" style={{ margin: "40px 0" }}>
-=======
-    <div style={{ margin: "30px 0" }} className={`${styles.rideDetails_container}`}>
-      <div class="row" >
-        <div class="col">
-          <p style={{ fontSize: "20px", fontWeight: "500" }}>Create a Ride</p>
-        </div>
-      </div>
-
-      <div class="row">
->>>>>>> 51f86e2813cbd968b8a166540cd778fede2193f7
         <div class="col">
           <small>Please do note that once there are reservations already to your ride, you may not cancel or edit the ride information anymore</small>
         </div>
@@ -37,7 +25,7 @@ export default function RideDetails(props) {
             <label for="etd" class="col-sm-2 col-form-label">ETD</label>
           </div>
           <div class="col-10">
-            <input type="text" name="etd" class="form-control" id="etd" />
+            <input type="text" name="etd" onChange={handleInputChange} class="form-control" id="etd" />
           </div>
         </div>
 
@@ -46,7 +34,7 @@ export default function RideDetails(props) {
             <label for="eta" class="col-sm-2 col-form-label">ETA</label>
           </div>
           <div class="col-10">
-            <input type="text" name="eta" class="form-control" id="eta" />
+            <input type="text" name="eta" onChange={handleInputChange} class="form-control" id="eta" />
           </div>
         </div>
 
@@ -55,12 +43,12 @@ export default function RideDetails(props) {
             <label for="maxNumberOfPassengers" class="col-sm-7 col-form-label">Max Number of Passengers</label>
           </div>
           <div class="col-5">
-            <input type="text" name="maxNumberOfPassengers" class="form-control" id="maxNumberOfPassengers" />
+            <input type="text" name="maxNumberOfPassengers" onChange={handleInputChange} class="form-control" id="maxNumberOfPassengers" />
           </div>
         </div>
 
         <Link to="/driverrides">
-          <button type="button" class="btn btn-primary btn-lg btn-block" style={{ marginBottom: "100px" }}>Create Ride</button>
+          <button type="button" onClick={handleSubmit} class="btn btn-primary btn-lg btn-block" style={{ marginBottom: "100px" }}>Create Ride</button>
         </Link>
       </form>
 
@@ -69,7 +57,7 @@ export default function RideDetails(props) {
           <Footer home="driverhome" profile="drivermainprofile" rides="driverrides" />
           :
           // Put PASSENGER ROUTES HERE
-          <Footer home="passengerhome" profile="passengerprofile" rides="passengerrides" />
+          null
       }
 
     </div>

@@ -9,8 +9,7 @@ import {
 
 export default function DriverRides(props) {
 
-  const { currentUser, driverInformation } = props;
-  const { rides } = driverInformation;
+  const { currentUser } = props;
 
   return (
     <div class="container">
@@ -42,14 +41,7 @@ export default function DriverRides(props) {
       </div>
 
       <div style={{ marginBottom: "70px" }}>
-
-        {
-          rides ?
-            rides.map(ride => {
-              return <RideContainer ride={ride} />;
-            }) : null
-        }
-
+        <RideContainer />
       </div>
 
       {

@@ -5,6 +5,7 @@ import Register from '../Forms/Register/Register';
 import PassengerProfile from '../Profile/PassengerProfile/PassengerProfile';
 import PassengerHome from '../Profile/PassengerProfile/PassengerHome/PassengerHome';
 import PassengerBookRide from '../Profile/PassengerProfile/PassengerBookRide/PassengerBookRide'
+import PassengerRides from '../Profile/PassengerProfile/PassengerRides/PassengerRides';
 import DriverProfile from '../Profile/DriverProfle/DriverProfile';
 import DriverHome from '../Profile/DriverProfle/DriverHome/DriverHome';
 import DriverCreateRide from '../Profile/DriverProfle/DriverCreateRide/DriverCreateRide';
@@ -19,8 +20,6 @@ import {
 function App() {
 
   const [currentUser, setCurrentUser] = useState('');
-  const [driverInformation, setDriverInformation] = useState({})
-  const [passengerInformation, setPassengerInformation] = useState({})
 
   const handleCurrentUser = (user) => setCurrentUser(user);
 
@@ -29,18 +28,19 @@ function App() {
       <Router>
         <div>
           <Switch>
-            <Route exact path="/" render={() => <Landing handleCurrentUser={handleCurrentUser} />} />
-            <Route exact path="/register" render={() => <Register currentUser={currentUser} setDriverInformation={setDriverInformation} setPassengerInformation={setPassengerInformation} />} />
+            <Route exact path="/" render={() => <Landing currentUser={currentUser} handleCurrentUser={handleCurrentUser} />} />
+            <Route exact path="/register" render={() => <Register currentUser={currentUser} />} />
 
-            <Route exact path="/passengerprofile" render={() => <PassengerProfile passengerInformation={passengerInformation} currentUser={currentUser} />} />
-            <Route exact path="/passengerhome" render={() => <PassengerHome currentUser={currentUser} passengerInformation={passengerInformation} />} />
-            <Route exact path="/passengerbookride" render={() => <PassengerBookRide currentUser={currentUser} passengerInformation={passengerInformation} setPassengerInformation={setPassengerInformation} />} />
+            <Route exact path="/passengerprofile" render={() => <PassengerProfile currentUser={currentUser} />} />
+            <Route exact path="/passengerhome" render={() => <PassengerHome currentUser={currentUser} />} />
+            <Route exact path="/passengerbookride" render={() => <PassengerBookRide currentUser={currentUser} />} />
+            <Route exact path="/passengerrides" render={() => <PassengerRides currentUser={currentUser} />} />
 
-            <Route exact path="/driverprofile" render={() => <DriverProfile currentUser={currentUser} driverInformation={driverInformation} setDriverInformation={setDriverInformation} />} />
+            <Route exact path="/driverprofile" render={() => <DriverProfile currentUser={currentUser} />} />
             <Route exact path="/driverhome" render={() => <DriverHome currentUser={currentUser} handleCurrentUser={handleCurrentUser} />} />
-            <Route exact path="/drivercreateride" render={() => <DriverCreateRide currentUser={currentUser} driverInformation={driverInformation} setDriverInformation={setDriverInformation} />} />
-            <Route exact path="/driverrides" render={() => <DriverRides currentUser={currentUser} driverInformation={driverInformation} />} />
-            <Route exact path="/drivermainprofile" render={() => <DriverMainProfile currentUser={currentUser} driverInformation={driverInformation} />} />
+            <Route exact path="/drivercreateride" render={() => <DriverCreateRide currentUser={currentUser} />} />
+            <Route exact path="/driverrides" render={() => <DriverRides currentUser={currentUser} />} />
+            <Route exact path="/drivermainprofile" render={() => <DriverMainProfile currentUser={currentUser} />} />
           </Switch>
         </div>
       </Router>
