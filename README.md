@@ -18,7 +18,7 @@ Application name is an
 
 The application is deployed on **Netlify**
 
-[Click me for a live demo]().
+<a href="https://byahena.netlify.app/" target="_blank">Click me for a live demo.</a>
 
 ## Installation
 
@@ -39,6 +39,18 @@ The application is deployed on **Netlify**
    `npm start`
 
 ## Screenshots
+
+<div id="main" style="display: flex">
+<img src="https://imgur.com/OGfR4Sn.png" width="219.8" />
+<img src="https://imgur.com/iiCza0u.png" width="204" />
+<img src="https://imgur.com/NtgSBbS.png" width="204"/>
+</div>
+<br>
+<div>
+<img src ="https://imgur.com/bkEJUJJ.png" width="209" />
+<img src="https://imgur.com/GUiyiwf.png" width="208.5" />
+<img src="https://imgur.com/mbN93pu.png" width="209"/>
+</div>
 
 
 
