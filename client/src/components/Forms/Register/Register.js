@@ -9,7 +9,46 @@ import {
 
 export default function Register(props) {
 
-  const { currentUser } = props;
+  const { currentUser, setDriverInformation, setPassengerInformation } = props;
+
+  const [driver, setDriver] = useState({
+    fullName: '',
+    emailAddress: '',
+    password: '',
+    contactNumber: '',
+    age: '',
+    plateNumber: '',
+    route: '',
+    rides: []
+  })
+  const [passenger, setPassenger] = useState({
+    fullName: '',
+    emailAddress: '',
+    password: '',
+    address: '',
+    contactNumber: '',
+    age: '',
+    rides: []
+  })
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+
+    if (currentUser === 'passenger') {
+      setPassenger({ ...passenger, [name]: value })
+    } else {
+      setDriver({ ...driver, [name]: value })
+    }
+
+  }
+
+  const handleSubmit = () => {
+    if (currentUser === 'passenger') {
+      setPassengerInformation({ ...passenger })
+    } else {
+      setDriverInformation({ ...driver })
+    }
+  }
 
   return (
     <>
@@ -43,38 +82,38 @@ export default function Register(props) {
                 <div className="modal-body">
                   <div className="form-group">
                     <label htmlFor="fullName">FullName</label>
-                    <input type="text" className="form-control" id="fullName" placeholder="Full Name" />
+                    <input type="text" name="fullName" onChange={handleInputChange} className="form-control" id="fullName" placeholder="Full Name" />
                   </div>
                   <div className="form-group">
                     <label htmlFor="emailAddress">Email address</label>
-                    <input type="email" className="form-control" id="emailAddress" placeholder="Email Address" />
+                    <input type="email" name="emailAddress" onChange={handleInputChange} className="form-control" id="emailAddress" placeholder="Email Address" />
                   </div>
                   <div className="form-group">
                     <label htmlFor="password">Password</label>
-                    <input type="password" className="form-control" id="password" placeholder="Password" />
+                    <input type="password" name="password" onChange={handleInputChange} className="form-control" id="password" placeholder="Password" />
                   </div>
                   <div className="form-group">
                     <label htmlFor="address">Address</label>
-                    <input type="text" className="form-control" id="address" placeholder="Address" />
+                    <input type="text" name="address" onChange={handleInputChange} className="form-control" id="address" placeholder="Address" />
                   </div>
                   <div className="form-group">
                     <label htmlFor="contactnumber">Contact Number</label>
-                    <input type="text" className="form-control" id="contactnumber" placeholder="Contact Number" />
+                    <input type="text" name="contactNumber" onChange={handleInputChange} className="form-control" id="contactnumber" placeholder="Contact Number" />
                   </div>
                   <div class="form-group">
-                    <label htmlFor="date">Birthday</label>
-                    <input class="form-control" type="date" value="Birthday" id="date" />
+                    <label htmlFor="age">Age</label>
+                    <input class="form-control" name="age" onChange={handleInputChange} type="text" id="age" placeholder="Age" />
                   </div>
                   <div className="form-group">
                     {
                       currentUser === 'passenger'
                         ?
-                        <Link to="/passengerProfile">
-                          <button type="button" className={`btn btn-block btn-primary ${styles.formCTAButton}`}>Create Account</button>
+                        <Link to="/passengerprofile">
+                          <button type="button" onClick={handleSubmit} className={`btn btn-block btn-primary ${styles.formCTAButton}`}>Create Account</button>
                         </Link>
                         :
-                        <Link to="/driverProfile">
-                          <button type="button" className={`btn btn-block btn-primary ${styles.formCTAButton}`}>Create Account</button>
+                        <Link to="/driverprofile">
+                          <button type="button" onClick={handleSubmit} className={`btn btn-block btn-primary ${styles.formCTAButton}`}>Create Account</button>
                         </Link>
                     }
 
