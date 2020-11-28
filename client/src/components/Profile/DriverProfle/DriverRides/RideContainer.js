@@ -3,26 +3,15 @@ import styles from './DriverRides.module.css';
 
 export default function RideContainer() {
   return (
-    <div style={{marginBottom: '5px'}}>
-      <div class="row py-3 px-lg-5 border bg-light">
-        <div class="col-2">
-          <a>
-            <img src="assets/img/ride.png" width="60" class="front-1" data-aos="fade-right" />
-          </a>
+    <div>
+      <div class="row py-3 px-lg-3 border bg-light">
+        <div class="col-3 ml-1">
+          <div class="row ml-1"><p style={{ fontSize: "12px" }}>11/27/2020</p></div>
+          <div class="row ml-1"><p style={{ fontSize: "12px" }}>Friday</p></div>
         </div>
-        <div class="col-7">
-          <h5>SM Molino -> Park Square, Makati</h5>
-          <p> ( 9:00 AM - 10:00 AM )</p>
-        </div>
-        <div class={`col-md-3 ${styles.driverRides_buttons} d-flex flex-row-reverse`}>
-          <span className={`${styles.driverRides_button}`}><i class="far fa-trash-alt"></i> Cancel</span>
-          <span className={`${styles.driverRides_button}`}><i class="far fa-edit"></i> Edit</span>
-          <span className={`${styles.driverRides_button}`}><i class="fas fa-eye"></i> View</span>
-          {/* <button type="button" class={`btn ${styles.btn_view}`}>View</button>
-          <button type="button" class={`btn ${styles.btn_edit}`}>Edit</button>
-          <button type="button" class={`btn ${styles.btn_cancel}`}>Cancel</button> */}
-        </div>
-
+        <div class="col-4"><p style={{ fontSize: "12px" }}>(11:00 AM - 12:00 PM )</p></div>
+        <div class="col-2"><p style={{ fontSize: "12px" }}>Park Square, Makati -> SM Molino, Cavite</p></div>
+        <div class="col-2 justify-content-md-center "><a href="#"><img src="assets/img/view.png" width="30" /></a></div>
       </div>
     </div>
   );
