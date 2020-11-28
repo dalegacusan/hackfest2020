@@ -17,7 +17,7 @@ export default function DriverHome(props) {
         </div>
       </div>
 
-      <div class="row" style={{marginBottom: "60px"}}>
+      <div class="row" style={{ marginBottom: "60px" }}>
         <div class="col">
           <div class="row ml-1" style={{ marginTop: "15px", marginBottom: "20px" }}>
             <p style={{ fontSize: "24px", marginBottom: "0", marginLeft: "9px" }}>List of rides near you</p>
@@ -30,11 +30,13 @@ export default function DriverHome(props) {
               </a>
             </div>
             <div class="col-7">
-              <h5>SM Molino -&gt; Park Square, Makati</h5>
+              <h5>Alabang Town Center -&gt; Century City Mall</h5>
               <p> ( 9:00 AM - 10:00 AM )</p>
             </div>
             <div class="col-md-3">
-              <a href="#" className={`btn btn-secondary ${styles.listButton}`}>Reserved</a>
+              <Link to="/reserve">
+                <a href="#" className={`btn btn-success ${styles.listButton}`}>Available</a>
+              </Link>
             </div>
           </div>
 
@@ -46,11 +48,11 @@ export default function DriverHome(props) {
               </a>
             </div>
             <div class="col-7">
-              <h5>Park Square, Makati -&gt; SM Molino</h5>
+              <h5>NAIA Terminal 3 -&gt; Clark International Airport</h5>
               <p> ( 9:00 AM - 10:00 AM )</p>
             </div>
             <div class="col-md-3">
-              <a href="#" className={`btn btn-danger ${styles.listButton}`}>  Full  </a>
+              <a className={`btn btn-danger ${styles.listButton}`}>  Full  </a>
             </div>
           </div>
 
@@ -62,11 +64,11 @@ export default function DriverHome(props) {
               </a>
             </div>
             <div class="col-7">
-              <h5>SM Molino to Park Square, Makati</h5>
+              <h5>Robinsons Galleria -&gt; Glorietta 3</h5>
               <p> ( 9:00 AM - 10:00 AM )</p>
             </div>
             <div class="col-md-3">
-              <a href="#" className={`btn btn-danger ${styles.listButton}`}>  Full  </a>
+              <a className={`btn btn-danger ${styles.listButton}`}>  Full  </a>
             </div>
           </div>
 
@@ -78,11 +80,11 @@ export default function DriverHome(props) {
               </a>
             </div>
             <div class="col-7">
-              <h5>Park Square, Makati -&gt; SM Molino</h5>
+              <h5>SM Megamall -&gt; Starmall Alabang</h5>
               <p> ( 9:00 AM - 10:00 AM )</p>
             </div>
             <div class="col-md-3">
-              <a href="#" className={`btn btn-secondary ${styles.listButton}`}>Reserved</a>
+              <a className={`btn btn-warning ${styles.listButton}`}>Reserved</a>
             </div>
           </div>
         </div>

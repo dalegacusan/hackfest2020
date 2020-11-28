@@ -12,6 +12,7 @@ import DriverCreateRide from '../Profile/DriverProfle/DriverCreateRide/DriverCre
 import DriverRides from '../Profile/DriverProfle/DriverRides/DriverRides';
 import DriverMainProfile from '../Profile/DriverProfle/DriverMainProfile/DriverMainProfile';
 import PassengerHome1 from '../Profile/PassengerProfile/PassengerHome/PassengerHome1';
+import Reserve from '../Profile/PassengerProfile/Reserve/Reserve';
 import {
   BrowserRouter as Router,
   Switch,
@@ -37,6 +38,7 @@ function App() {
             <Route exact path="/passengerbookride" render={() => <PassengerBookRide currentUser={currentUser} />} />
             <Route exact path="/passengerrides" render={() => <PassengerRides currentUser={currentUser} />} />
             <Route exact path="/passengerhome1" render={() => <PassengerHome1 currentUser={currentUser} />} />
+            <Route exact path="/reserve" render={() => <Reserve currentUser={currentUser} />} />
             
 
             <Route exact path="/driverprofile" render={() => <DriverProfile currentUser={currentUser} />} />

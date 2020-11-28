@@ -4,10 +4,19 @@
 
 }
 
-.profileHeader_logo, .profileHeader_title{
-  padding: 20px 0px;
+.profileHeader_logo {
+  padding: 0;
+  max-width: 25%!important;
 }
 
+.profileHeader_logo, .profileHeader_title{
+  padding: 20px 0px;
+  color: white;
+  position: absolute;
+}
+
+.profileHeader_title{
+}
 
 .profileHeader_logo{
   background: linear-gradient(to right, #457b9d 20%, #274685 80%);

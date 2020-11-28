@@ -12,7 +12,7 @@ export default function RideContainer() {
           </div>
           <div class="row ml-1"><p style={{ fontSize: "12px" }}>Friday</p></div>
           <p>
-            <span class="badge badge-info" style={{ color: "#FFF" }}>{`0 / 22`}</span>
+            <span class="badge badge-success" style={{ color: "#FFF" }}>{`3 / 22`}</span>
           </p>
         </div>
         <div class="col-4"><p style={{ fontSize: "12px" }}>4:30AM - 9:50AM</p></div>

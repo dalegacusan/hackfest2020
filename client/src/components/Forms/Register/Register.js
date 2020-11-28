@@ -81,7 +81,7 @@ export default function Register(props) {
                 </div>
               </Modal.Body>
               <Modal.Footer className={`${styles.landingModal_footer} modal-footer`}>
-                <p>Already have an account? <Link to="/">Sign In</Link></p>
+                <p>Already have an account? <Link to="/" style={{color: "#cccc"}}>Sign In</Link></p>
               </Modal.Footer>
             </Modal>
           </>

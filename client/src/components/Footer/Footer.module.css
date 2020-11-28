@@ -12,11 +12,14 @@
 
 .footerNavbarIcons_container a p{
   margin-bottom: 0;
+  color: white;
+
 }
 
 .footerNavbarIcons_container i {
   font-size: 18px;
   padding-top: 12px;
   margin-top: -5px;
-  color: #000;
+  color: white;
+
 }
