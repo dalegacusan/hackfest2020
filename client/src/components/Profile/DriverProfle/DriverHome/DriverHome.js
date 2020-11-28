@@ -74,19 +74,6 @@ export default function DriverHome(props) {
         <div class="col-2"><p style={{ fontSize: "12px" }}>Pasig to Makati</p></div>
       </div>
     </div>
-    <footer class="footer" role="contentinfo">
-    <div class="container">
-      <div class="row justify-content-center text-center">
-        <div class="col-md-7">
-          
-          <div class="credits">
-
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </footer>
       {
         currentUser === "driver" ?
           <Footer home="driverhome" profile="drivermainprofile" rides="driverrides" />
