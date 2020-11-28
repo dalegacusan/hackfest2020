@@ -30,7 +30,7 @@ export default function DriverRides(props) {
       </div>
 
       <div class="row ml-1" style={{ marginTop: "25px", marginBottom: "30px" }}>
-        <img src="assets/img/history.png" width="150" class="front-1" data-aos="fade-right" alt="history_img" style={{ width: "50px", marginTop: "-10px", transform: "scaleX(-1)" }} />
+        <img src="assets/img/ICON.jpg" width="20" class="front-1" data-aos="fade-right" alt="history_img" style={{ width: "50px", height: "50px", marginTop: "-10px", transform: "scaleX(-1)" }} />
         <p style={{ fontSize: "24px", marginBottom: "0", marginLeft: "9px" }}>Ride History</p>
       </div>
 

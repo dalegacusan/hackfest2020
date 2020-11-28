@@ -25,7 +25,8 @@ export default function DriverMainProfile(props) {
 
       <div class="row" style={{ margin: "20px 0" }}>
         <div class="col">
-          <DriverPhoto mainProfile={true} />
+        <img src="assets/img/avatar.png" alt="Image" class="center"></img>
+          
         </div>
       </div>
 
@@ -38,37 +39,41 @@ export default function DriverMainProfile(props) {
                 <div class="col-lg-8 mx-auto">
                   <div class="control-group">
                     <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                      <h5>Name:</h5> <span>{fullName}</span>
+                      <h5>Name:</h5> 
+                      <span>ProGs
+                      </span>
                     </div>
                   </div>
                   <div class="control-group">
                     <div class="form-group floating-label-form-group controls mb-0 pb-2">
                       <h5>Email Address:</h5>
-                      <span>{emailAddress}</span>
+                      <span>progshackfest@gmail.com
+                      </span>
                     </div>
                   </div>
                   <div class="control-group">
                     <div class="form-group floating-label-form-group controls mb-0 pb-2">
                       <h5>Contact Number:</h5>
-                      <span>{contactNumber}</span>
+                      <span>09011292020
+                        </span> 
                     </div>
                   </div>
                   <div class="control-group">
                     <div class="form-group floating-label-form-group controls mb-0 pb-2">
                       <h5>Age:</h5>
-                      <span>{age}</span>
+                      <span>20</span>
                     </div>
                   </div>
                   <div class="control-group">
                     <div class="form-group floating-label-form-group controls mb-0 pb-2">
                       <h5>Plate No:</h5>
-                      <span>{plateNumber}</span>
+                      <span>WKJ-812</span>
                     </div>
                   </div>
                   <div class="control-group">
                     <div class="form-group floating-label-form-group controls mb-0 pb-2">
                       <h5>Route:</h5>
-                      <span>{route}</span>
+                      <span>Bel-Air -> Mall of Asia</span>
                     </div>
                   </div>
                 </div>

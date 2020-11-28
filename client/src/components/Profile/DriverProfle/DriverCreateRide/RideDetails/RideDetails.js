@@ -11,6 +11,7 @@ export default function RideDetails(props) {
 
   return (
     <div className={`${styles.rideDetails_container}`}>
+      <img src="assets/img/bus.png" alt="Image" class="center"></img>
       <div class="row" style={{ margin: "40px 0" }}>
         <div class="col">
           <small>Please do note that once there are reservations already to your ride, you may not cancel or edit the ride information anymore</small>
